@@ -1,5 +1,41 @@
 @charset "UTF-8";
+/* font */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
+@font-face {
+ font-family: 'NanumSquare';
+ src: url(/fonts/NanumSquareR.eot);
+ src: url(/fonts/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+      url(/fonts/NanumSquareR.woff) format('woff'),
+      url(/fonts/NanumSquareR.ttf) format('truetype');
+}
+@font-face {font-family: 'Cafe24Oneprettynight';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');font-weight: normal;font-style: normal; }
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* 초기화 */
+body {font-family:'Roboto', 'Nanum Gothic', dotum, sans-serif; }
 
 li { list-style:none;}
 .hidden { position:absolute; left:-9999px;}
+
+#header { position:relative; margin:0 70px; min-width:1200px; height:100px;}
+#header_1 { position:absolute; line-height: 0; overflow: hidden; }
+#logo { float: left; padding:35px 0 0}
+
+#hd_qnb { float: right; margin-top:35px;}
+#hd_qnb li { position:relative; float:left;font-size:18px;line-height:35px;position:relative;text-align:center;margin:0 0 0 50px;}
+#hd_qnb li a { display:block; color:#525252; font-weight: 200;}
+#hd_qnb li a:hover { color:#ee4a4d;}
+#hd_qnb li a:hover:after { position:absolute; margin:0; width:10px; height:10px; left:-12px; top:4px; background:#ef4a4d; display:block; content:""; border-radius:10px}
+
+.main_contain { position: relative;}
+.main_con_1 { width:100%; height:100%;}
+.main_con_slider { padding:7& 0; text-align: center;}
+.main_con_slider p { display:block;}
+.main_con_slider:nth-child(1) { background:#a3d5f5;}
+.main_con_slider:nth-child(2) { background:#ffdbdb;}
+.main_con_slider:nth-child(3) { background:#41d0d6;}
+.main_con_slider:nth-child(4) { background:#fee98e;}
+
+
+.con_1_next { }
+.con_1_prev { }
